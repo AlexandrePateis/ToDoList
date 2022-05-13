@@ -1,30 +1,48 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    <div class="container-fluid">
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="title">ToDo List</li>
+          <li class="nav-item item-1">
+            <router-link to="/list">Tarefas</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link to="/form">Formulario</router-link>
+          </li>
+        </ul>
+      </div>
+    </div>
   </nav>
-  <router-view/>
+  <router-view />
 </template>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+a {
+  text-decoration: none;
+  color: rgb(255, 255, 255) !important;
+  margin-right: 2em;
+  font-size: 1.4em;
+  transition: linear 0.1s;
 }
-
-nav {
-  padding: 30px;
+a:hover {
+  color: #ccc !important;
 }
-
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
+.navbar-nav {
+  align-items: center;
 }
+.item-1 {
+  margin-left: 7em;
+}
+.navbar {
+  height: 80px;
+}
+.title {
+  font-family: "Arial", cursive;
+  font-size: 1.5em;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
 
-nav a.router-link-exact-active {
-  color: #42b983;
+  margin-left: 2em;
 }
 </style>
