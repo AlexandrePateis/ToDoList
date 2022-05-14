@@ -1,4 +1,5 @@
 <template>
+
   <nav class="navbar navbar-expand-lg navbar-light bg-dark">
     <div class="container-fluid">
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -16,7 +17,14 @@
   </nav>
   <router-view />
 </template>
-
+<script>
+export default {
+  
+  setup() {
+    
+  },
+}
+</script>
 <style>
 a {
   text-decoration: none;
