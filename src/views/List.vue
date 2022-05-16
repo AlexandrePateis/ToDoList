@@ -29,7 +29,7 @@
             <div class="modal-content">
               <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLabel">
-                  Tem certeza que deseja remover essa tarefa ?
+                  Tem certeza que deseja excluir a tarefa "{{taskSelected.subject}}" ?
                 </h5>
                 <button
                   type="button"
@@ -40,7 +40,7 @@
               </div>
               <div 
               class="modal-body">
-              Ao clicar em Excluir, a opeção não poderá ser revertida.{{taskSelected.subject}}
+              Ao clicar em Excluir, a opeção não poderá ser revertida.
               </div>
               <div class="modal-footer">
                 <button
